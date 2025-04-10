@@ -4,6 +4,9 @@ MMiat is a Python library for implementing and evaluating Membership Inference A
 
 ## Features
 
+- **Seamless PyTorch Integration**: Works directly with your existing PyTorch models and datasets
+- **Minimal Code Changes**: Evaluate privacy risks with just a few lines of code
+- **Compatible with Standard ML Workflows**: Fits naturally into your existing training and evaluation pipelines
 - Implementation of various membership inference attacks (currently including Loss Attack)
 - Utilities for dataset partitioning and attack evaluation
 - Metrics calculation for attack performance (AUC, accuracy)
@@ -47,6 +50,17 @@ metrics = calculate_miametrics(membership_labels, confidences)
 # Visualize results
 create_mia_metric_report(metrics, attack_name="Loss Attack", extras=["auc", "accuracy"])
 ```
+
+### Integration with Your ML Pipeline
+
+MMiat is designed to work seamlessly with your existing ML workflow:
+
+1. **Train your model as usual** with PyTorch
+2. **Partition your data** using the provided utilities
+3. **Run the attack** with minimal additional code
+4. **Evaluate and visualize** the results
+
+No need to modify your model architecture or training process - just add a few lines of code to assess privacy risks.
 
 ## Examples
 
